@@ -1,13 +1,13 @@
 {% set name = "napari-input-visualizer" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-input-visualizer-{{ version }}.tar.gz
-  sha256: 7c50d61a0d593164c06e8c369a960fb6b0744b24173e4bc78234fab0c4d42182
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 985df8f0dd5ad9e480aefea8f42aaee63b57e11724faf4cd44e3252ec5c65c3f
 
 build:
   noarch: python
